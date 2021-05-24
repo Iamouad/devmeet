@@ -11,7 +11,8 @@ connectDB();
 //Init middleware bodyparser
 app.use(express.json({extended: false}))
 
-
+//simple endpoint
+//app.get('/', (req, res)=> res.send('Api running Here'))
 
 //Define routes
 app.use('/api/users', require('./routes/api/users'));

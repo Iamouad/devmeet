@@ -30,7 +30,7 @@ router.post('/', [
     if(user){
         return res.status(400).json({msg: 'User already exists'})
     }
-    //Get users gravatar
+    //Get user's gravatar
     const avatar = gravatar.url(email,{
         s: '200', //size
         r: 'pg', //rating
