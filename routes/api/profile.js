@@ -173,6 +173,8 @@ async(req, res)=>{
         return res.status(400).json({errors: errors.array()});
     }
 
+    console.log(req.body)
+
     const{
         title,
         company,
@@ -201,7 +203,7 @@ async(req, res)=>{
         
     } catch (error) {
         console.error(error);
-        return res.status(500).send('Server error');
+        return res.status(500).send('Server error ');
     }
 });
 
